@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "blockchain-scanner"
+version = "0.1.0"
+description = "Blockchain Scanner"
+authors = ["bucky <buckyroberts@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-bitcoinrpc = "^1.0"
+web3 = "^5.24.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
