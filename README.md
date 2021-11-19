@@ -49,3 +49,18 @@ Running example::
     -r 0xdac17f958d2ee523a2206206994597c13d831ec7 
     -t 0x4a5efe38157176293d5179f9940667d64a8d9126a0d4edf5d5aadc348cefee1b 
     --port 8545
+
+
+Nano Full Node setup
+++++++++++++++++++++
+
+Nano documentation: https://docs.nano.org/running-a-node/node-setup/::
+
+   make up-dependencies-only
+
+Running example::
+   
+   python main -b nano -a 340282366920938463463374607431768211455 \
+   -r nano_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3 \
+   -t 991CF190094C00F0B68E2E5F75F6BEE95A2E0BD93CEAA4A6734DB9F19B728948 \
+   --port 7076
