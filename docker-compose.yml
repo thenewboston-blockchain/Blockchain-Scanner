@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  nano:
+    image: nanocurrency/nano:V22.1
+    restart: always
+    ports:
+      - 127.0.0.1:7075:7075
+      - 127.0.0.1:7076:7076
+      - 127.0.0.1:7078:7078
+    volumes:
+      - nano-data:/root/Nano
+      - ./_docker/nano/config-rpc.toml:/root/Nano/config-rpc.toml
+
+volumes:
+  nano-data:
+    driver: local
